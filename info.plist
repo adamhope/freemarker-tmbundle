@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Freemarker</string>
+	<key>ordering</key>
+	<array>
+		<string>C011BB07-875D-4DEB-9582-0E1FEC0D1E4E</string>
+	</array>
+	<key>uuid</key>
+	<string>4B4498B8-B705-4E4C-9DB8-06B43D9020EF</string>
+</dict>
+</plist>
