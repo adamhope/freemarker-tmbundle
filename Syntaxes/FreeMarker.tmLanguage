@@ -23,7 +23,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(&lt;/?#)\s*</string>
+			<string>(&lt;/?[@#]{1})\s*</string>
 			<key>contentName</key>
 			<string>source.ftl.tag.content</string>
 			<key>end</key>
@@ -34,7 +34,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(if|else)\b</string>
+					<string>\b(if|else|for)\b</string>
 					<key>name</key>
 					<string>keyword.control.ftl</string>
 				</dict>
@@ -42,11 +42,17 @@
 					<key>match</key>
 					<string>\b(var|assign)\b</string>
 					<key>name</key>
-					<string>storage.language.ftl</string>
+					<string>storage.type.ftl</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\?(number|string|boolean)</string>
+					<key>name</key>
+					<string>support.language.ftl</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\w+\.\w+</string>
 					<key>name</key>
 					<string>support.language.ftl</string>
 				</dict>
@@ -121,11 +127,11 @@
 					<key>name</key>
 					<string>constant.language.null.ftl</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>text.html.basic</string>
-				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
