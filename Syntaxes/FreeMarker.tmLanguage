@@ -33,10 +33,10 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>comment</key>
+					<string>built in directives</string>
 					<key>match</key>
-					<string>\b(if|else|for)\b</string>
-					<key>name</key>
-					<string>keyword.control.ftl</string>
+					<string>(if|else)</string>
 				</dict>
 				<dict>
 					<key>match</key>
