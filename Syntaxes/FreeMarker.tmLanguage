@@ -19,7 +19,7 @@
 			<key>end</key>
 			<string>--[\&gt;|\]]</string>
 			<key>name</key>
-			<string>comment.block.tt</string>
+			<string>comment.block.ftl</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -80,6 +80,16 @@
 					<string>support.language.ftl</string>
 				</dict>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.ftl</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Only really relates to &lt;@ ... &gt;</string>
 					<key>match</key>
 					<string>\b(\w*)=</string>
 					<key>name</key>
