@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol list functions</string>
 	<key>scope</key>
-	<string>function.ftl</string>
+	<string>entity.name.function.ftl</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
