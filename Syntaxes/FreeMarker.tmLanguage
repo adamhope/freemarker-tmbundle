@@ -36,13 +36,36 @@
 					<key>comment</key>
 					<string>built in directives</string>
 					<key>match</key>
-					<string>(if|else)</string>
+					<string>\b(if|else|elseif|switch|case|default|break|list|break|include|import|noparse|compress|escape|noescape|assign|global|local|setting|macro|nested|return|return|flush|stop|ftl|t|lt|rt|nt|attempt|recover|visit|recurse|fallback)\b</string>
+					<key>name</key>
+					<string>keyword.control.ftl</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(var|assign)\b</string>
+					<string>\b(var|assign|function)\b</string>
 					<key>name</key>
 					<string>storage.type.ftl</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>storage.type.ftl</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.ftl</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>functions</string>
+					<key>match</key>
+					<string>\b(function)\s+(\w*)\b</string>
+					<key>name</key>
+					<string>meta.function.ftl</string>
 				</dict>
 				<dict>
 					<key>match</key>
